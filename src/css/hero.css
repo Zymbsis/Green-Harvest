@@ -1,0 +1,38 @@
+.hero-section {
+  
+}
+
+.hero-container {
+  background-color: #576f35;
+  background-image: url('../img/mobile/hero/hero-bg-img-1x.jpg');
+  background-position: center bottom;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fbfbfb;
+}
+
+@media screen and (min-device-pixel-ratio: 2) {
+  .hero-section {
+    background-image: url('../img/mobile/hero/hero-bg-img-2x.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3) {
+  .hero-section {
+    background-image: url('../img/mobile/hero/hero-bg-img-3x.jpg');
+  }
+}
