@@ -3,7 +3,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  /* width: 375px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,18 +11,73 @@
   padding-bottom: 28px;
 }
 
-.logo-link {
+.header-logo-link {
   display: flex;
   gap: 4px;
   align-items: center;
 }
 
-.logo-icon {
+.header-logo-icon {
   fill: #fbfbfb;
 }
 
-.logo-text {
+.header-logo-text {
   fill: #fbfbfb;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  height: 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  text-transform: capitalize;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out,
+    border 250ms ease-in-out;
+}
+
+.header-logo-link:focus,
+.header-nav-link:hover {
+  background-color: #fbfbfb;
+  color: #576f35;
+  border: 1px solid #576f35;
+}
+
+.header-shop-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  border-radius: 30px;
+  padding: 16px 32px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  transition: background-color 250ms ease-in-out;
+}
+
+.header-shop-button:focus,
+.header-shop-button:hover {
+  background-color: #622133;
+}
+
+.header-open-menu-button {
+  display: block;
 }
 
 .open-icon {
@@ -31,4 +86,32 @@
 }
 .close-icon {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .header-open-menu-button {
+    display: none;
+  }
+
+  .header-logo-link {
+    flex-grow: 1;
+  }
+
+  .header-shop-button {
+    display: flex;
+  }
 }
