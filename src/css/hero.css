@@ -86,7 +86,7 @@
 @media screen and (min-width: 1280px) {
   .hero-section {
     background-image: url('../img/desktop/hero/hero-bg-desktop-1x.jpg');
-    background-position: calc(50% + 315px);
+    background-position: calc(50% + 325px);
     background-size: contain;
   }
 
