@@ -52,7 +52,7 @@ img {
 .container {
   margin: 0 auto;
   min-width: 320px;
-  width: 375px;
+  max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
 }
