@@ -16,17 +16,14 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  pointer-events: none;
+  cursor: default;
 }
 
-ul {
+ul,
+li {
   padding-left: 0;
   margin: 0;
   list-style-type: none;
-}
-
-li {
-  cursor: pointer;
 }
 
 a {
@@ -39,6 +36,11 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+input {
+  outline: none;
+  color: inherit;
 }
 
 img {
