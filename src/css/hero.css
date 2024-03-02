@@ -1,11 +1,10 @@
-.hero-section {
-  padding: 100px 0 410px;
-}
-
 .hero-container {
-  background-color: #576f35;
+  padding-top: 100px;
+  padding-bottom: 410px;
   background-image: url('../img/mobile/hero/hero-bg-img-1x.jpg');
   background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #576f35;
 }
 
 .hero-title {
