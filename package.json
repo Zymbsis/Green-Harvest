@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Green-Harvest/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push": "git add . && git commit -m 'update' && git push"
   },
   "devDependencies": {
     "vite": "^4.5.2",
