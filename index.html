@@ -20,12 +20,39 @@
     />
     
     <script type="module" crossorigin src="/Green-Harvest/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Green-Harvest/assets/index-22337e8a.css">
+    <link rel="stylesheet" href="/Green-Harvest/assets/index-50bde445.css">
   </head>
   <body>
-    <header></header>
+    <header>
+  <div class="header-container container">
+    <a href="../index.html" class="header-logo-link">
+      <svg class="header-logo-icon" width="16" height="16">
+        <use href="../img/icons.svg#logo-icon"></use>
+      </svg>
+      <svg class="header-logo-text" width="146" height="12">
+        <use href="../img/icons.svg#logo-text"></use>
+      </svg>
+    </a>
+    <nav class="header-nav">
+      <a href="#how" class="header-nav-link">how it works</a>
+      <a href="#vegetables" class="header-nav-link">vegetables</a>
+      <a href="#reviews" class="header-nav-link">reviews</a>
+    </nav>
+    <a href="#order" class="header-shop-button">shop now</a>
+    <button type="button"
+      class="header-open-menu-button"
+      data-id="menu-button"
+      data-action="open"
+    >
+      <svg class="open-icon" width="21.33" height="16">
+        <use href="../img/icons.svg#open-icon"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
     <main>
-      <section>
+      <section class="hero-section">
   <div class="hero-container container">
     <h1 class="hero-title">organic vegetables to your diet today!</h1>
     <p class="hero-text">
@@ -39,12 +66,38 @@
 
       <section class="how-section"><div class="container"></div></section>
 
-      
+      <section>
+  <div class="ad-container container">
+    <p class="ad-text">
+      <span class="ad-text-bg">Discount up to 40%!</span> Taste the vitamins and
+      keep your health
+    </p>
+  </div>
+</section>
+
       
       
       
     </main>
     
+    <!-- <div class="menu-wrapper">
+  <div class="menu-backdrop">
+    <div class="menu-container container">
+      <button class="header-close-menu-button">
+        <svg class="close-icon" width="16" height="16">
+          <use href="../img/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+      <nav class="menu-nav">
+        <a href="#how" class="menu-nav-link">how it works</a>
+        <a href="#vegetables" class="menu-nav-link">vegetables</a>
+        <a href="#reviews" class="menu-nav-link">reviews</a>
+      </nav>
+      <button class="menu-shop-button">shop now</button>
+    </div>
+  </div>
+</div>
+ -->
     
   </body>
 </html>
