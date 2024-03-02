@@ -1,7 +1,5 @@
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: #f6f6f6;
-  color: #111;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 h1,
@@ -47,4 +45,27 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1128px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
