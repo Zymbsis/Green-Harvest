@@ -1,0 +1,34 @@
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.logo-link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.logo-icon {
+  fill: #fbfbfb;
+}
+
+.logo-text {
+  fill: #fbfbfb;
+}
+
+.open-icon {
+  display: block;
+  stroke: #fbfbfb;
+}
+.close-icon {
+  display: none;
+}

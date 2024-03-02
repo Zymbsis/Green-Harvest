@@ -1,7 +1,7 @@
 .hero-container {
   padding-top: 100px;
   padding-bottom: 410px;
-  background-image: url('../img/mobile/hero/hero-bg-img-1x.jpg');
+  background-image: url('../img/mobile/hero/hero-bg-mob-1x.jpg');
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: #576f35;
@@ -26,12 +26,12 @@
 
 @media screen and (min-device-pixel-ratio: 2) {
   .hero-section {
-    background-image: url('../img/mobile/hero/hero-bg-img-2x.jpg');
+    background-image: url('../img/mobile/hero/hero-bg-mob-2x.jpg');
   }
 }
 
 @media screen and (min-device-pixel-ratio: 3) {
   .hero-section {
-    background-image: url('../img/mobile/hero/hero-bg-img-3x.jpg');
+    background-image: url('../img/mobile/hero/hero-bg-mob-3x.jpg');
   }
 }
