@@ -1,0 +1,108 @@
+.menu-backdrop {
+  display: none;
+  position: relative;
+  background: rgba(20, 20, 20, 0.4);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+.menu-container-open {
+  .menu-container {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 200ms ease-in-out, opacity 500ms ease-in-out;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 350ms ease-in-out, opacity 500ms ease-in-out;
+
+  max-width: 375px;
+  height: 100vh;
+  background-color: #7a3145;
+  padding: 28px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-close-menu-button {
+  align-self: flex-end;
+  margin-bottom: 188px;
+}
+
+.close-icon {
+  display: block;
+  stroke: #fbfbfb;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.menu-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 12px;
+  width: 114px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  text-transform: capitalize;
+}
+
+.menu-nav-link:first-child {
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.menu-shop-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbfb;
+  color: #7a3145;
+  border-radius: 30px;
+  width: 155px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 351px;
+  }
+
+  .menu-container-open {
+    .menu-backdrop {
+      display: block;
+      opacity: 1;
+      transition: opacity 200ms ease-in-out;
+    }
+  }
+}

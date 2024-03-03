@@ -1,0 +1,52 @@
+.ad-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ad-text {
+  position: relative;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04167;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.ad-text-bg {
+  display: block;
+  position: relative;
+  color: #fbfbfb;
+}
+
+.ad-text-bg::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: #576f35;
+  border-radius: 12px;
+  width: calc(100% + 20px);
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+  .ad-text {
+    font-size: 64px;
+    line-height: 1.09375;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ad-text {
+    font-size: 76px;
+    line-height: 1.05263;
+  }
+
+  .ad-text-bg {
+    display: inline-block;
+  }
+}
