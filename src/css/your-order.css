@@ -127,6 +127,7 @@
 }
 
 .order-form-textarea {
+  resize: none;
   height: 91px;
   margin-bottom: 20px;
   border-radius: 15px;
