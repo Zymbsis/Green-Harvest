@@ -16,58 +16,62 @@
           <span class="order-form-title-green">the form</span> below and we will
           contact you !
         </p>
-        <fieldset class="order-form-fieldset">
-          <input
-            class="order-form-input"
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-          />
-          <input
-            class="order-form-input"
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            class="oredr-form-textarea"
-            name="comment"
-            placeholder="Comment"
-          ></textarea>
-        </fieldset>
+        <input
+          class="order-form-input order-form-input-name"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid name-valid">Succes!</p>
+        <p class="text-invalid name-invalid">Invalid email, try again</p>
+        <input
+          class="order-form-input order-form-input-email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid email-valid">Succes!</p>
+        <p class="text-invalid email-invalid">Invalid email, try again</p>
+        <textarea
+          class="order-form-textarea"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
         <button class="order-form-button" type="submit">Send</button>
       </form>
       <div class="order-social-wrapper">
-        <picture>
+        <picture class="order-picture">
           <source
             srcset="
-              ./img/desktop/your-order/your-order-desktop-1x.jpg 1x,
-              ./img/desktop/your-order/your-order-desktop-2x.jpg 2x,
-              ./img/desktop/your-order/your-order-desktop-3x.jpg 3x
+              ./img/desktop/your-order/your-order-desktop-1x.png 1x,
+              ./img/desktop/your-order/your-order-desktop-2x.png 2x,
+              ./img/desktop/your-order/your-order-desktop-3x.png 3x
             "
             media="(min-width: 1280px)"
           />
           <source
             srcset="
-              ./img/tablet/your-order/your-order-tablet-1x.jpg 1x,
-              ./img/tablet/your-order/your-order-tablet-2x.jpg 2x,
-              ./img/tablet/your-order/your-order-tablet-3x.jpg 3x
+              ./img/tablet/your-order/your-order-tablet-1x.png 1x,
+              ./img/tablet/your-order/your-order-tablet-2x.png 2x,
+              ./img/tablet/your-order/your-order-tablet-3x.png 3x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              ./img/mobile/your-order/your-order-mobile-1x.jpg 1x,
-              ./img/mobile/your-order/your-order-mobile-2x.jpg 2x,
-              ./img/mobile/your-order/your-order-mobile-3x.jpg 3x
+              ./img/mobile/your-order/your-order-mobile-1x.png 1x,
+              ./img/mobile/your-order/your-order-mobile-2x.png 2x,
+              ./img/mobile/your-order/your-order-mobile-3x.png 3x
             "
-            media="(max-width: 768px)"
+            media="(max-width: 767px)"
           />
           <img
             class="order-social-img"
-            src="../img/desktop/your-order/your-order-desktop-1x.jpg"
+            src="./img/desktop/your-order/your-order-desktop-1x.png"
             alt="Bottle with fruits"
             width="427"
             height="273"
@@ -76,10 +80,10 @@
         <p class="order-social-text">Follow us on our social networks:</p>
         <ul class="order-social-list">
           <li class="order-social-item">
-            <a href="" class="order-social-link">instagram <span>/</span> </a>
+            <a href="" class="order-social-link">instagram</a><span>/</span>
           </li>
           <li class="order-social-item">
-            <a href="" class="order-social-link">facebook <span>/</span> </a>
+            <a href="" class="order-social-link">facebook</a><span>/</span>
           </li>
           <li class="order-social-item">
             <a href="" class="order-social-link">youtube</a>
