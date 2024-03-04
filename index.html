@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/Green-Harvest/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Green-Harvest/assets/index-f63a344e.css">
+    <link rel="stylesheet" href="/Green-Harvest/assets/index-df3c7e44.css">
   </head>
   <body>
     <header>
@@ -261,7 +261,90 @@
   </div>
 </section>
 
-      
+      <section class="order-section" id="order">
+  <div class="container order-container">
+    <h2 class="order-title">
+      Fresh <span>Harvest</span> Box has got you covered
+    </h2>
+    <p class="order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-content-wrapper">
+      <form class="order-form">
+        <p class="order-form-title">
+          Ordering <span class="order-form-title-red">from us</span> is quick
+          and easy! Fill out
+          <span class="order-form-title-green">the form</span> below and we will
+          contact you !
+        </p>
+        <input
+          class="order-form-input order-form-input-name"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid name-valid">Succes!</p>
+        <p class="text-invalid name-invalid">Invalid email, try again</p>
+        <input
+          class="order-form-input order-form-input-email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid email-valid">Succes!</p>
+        <p class="text-invalid email-invalid">Invalid email, try again</p>
+        <textarea
+          class="order-form-textarea"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
+        <button class="order-form-button" type="submit">Send</button>
+      </form>
+      <div class="order-social-wrapper">
+        <picture class="order-picture">
+          <source
+            srcset="/Green-Harvest/assets/your-order-desktop-1x-c5a9d68d.png 1x, /Green-Harvest/assets/your-order-desktop-2x-a4e90321.png 2x, /Green-Harvest/assets/your-order-desktop-3x-94df0244.png 3x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/Green-Harvest/assets/your-order-tablet-1x-e2b5783c.png 1x, /Green-Harvest/assets/your-order-tablet-2x-8c33c713.png 2x, /Green-Harvest/assets/your-order-tablet-3x-2ae947ea.png 3x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/Green-Harvest/assets/your-order-mobile-1x-c3bfd573.png 1x, /Green-Harvest/assets/your-order-mobile-2x-58f412be.png 2x, /Green-Harvest/assets/your-order-mobile-3x-c571b9c5.png 3x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="order-social-img"
+            src="/Green-Harvest/assets/your-order-desktop-1x-c5a9d68d.png"
+            alt="Bottle with fruits"
+            width="427"
+            height="273"
+          />
+        </picture>
+        <p class="order-social-text">Follow us on our social networks:</p>
+        <ul class="order-social-list">
+          <li class="order-social-item">
+            <a href="" class="order-social-link">instagram</a><span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a href="" class="order-social-link">facebook</a><span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a href="" class="order-social-link">youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer class="footer-section">
   <div class="footer-container container">
