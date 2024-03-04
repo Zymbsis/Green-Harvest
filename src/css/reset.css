@@ -42,6 +42,7 @@ button {
 input {
   outline: none;
   color: inherit;
+  font-family: inherit;
 }
 
 img {

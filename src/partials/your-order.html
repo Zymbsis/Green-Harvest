@@ -1,0 +1,95 @@
+<section class="order-section" id="order">
+  <div class="container order-container">
+    <h2 class="order-title">
+      Fresh <span>Harvest</span> Box has got you covered
+    </h2>
+    <p class="order-text">
+      Our boxes are packed with delicious, nutritious vegetables, perfect for
+      anyone looking to eat healthier or support local farmers. Order your box
+      today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="order-content-wrapper">
+      <form class="order-form">
+        <p class="order-form-title">
+          Ordering <span class="order-form-title-red">from us</span> is quick
+          and easy! Fill out
+          <span class="order-form-title-green">the form</span> below and we will
+          contact you !
+        </p>
+        <input
+          class="order-form-input order-form-input-name"
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid name-valid">Succes!</p>
+        <p class="text-invalid name-invalid">Invalid email, try again</p>
+        <input
+          class="order-form-input order-form-input-email"
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <p class="text-valid email-valid">Succes!</p>
+        <p class="text-invalid email-invalid">Invalid email, try again</p>
+        <textarea
+          class="order-form-textarea"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
+        <button class="order-form-button" type="submit">Send</button>
+      </form>
+      <div class="order-social-wrapper">
+        <picture class="order-picture">
+          <source
+            srcset="
+              ./img/desktop/your-order/your-order-desktop-1x.png 1x,
+              ./img/desktop/your-order/your-order-desktop-2x.png 2x,
+              ./img/desktop/your-order/your-order-desktop-3x.png 3x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/tablet/your-order/your-order-tablet-1x.png 1x,
+              ./img/tablet/your-order/your-order-tablet-2x.png 2x,
+              ./img/tablet/your-order/your-order-tablet-3x.png 3x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/mobile/your-order/your-order-mobile-1x.png 1x,
+              ./img/mobile/your-order/your-order-mobile-2x.png 2x,
+              ./img/mobile/your-order/your-order-mobile-3x.png 3x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="order-social-img"
+            src="./img/desktop/your-order/your-order-desktop-1x.png"
+            alt="Bottle with fruits"
+            width="427"
+            height="273"
+          />
+        </picture>
+        <p class="order-social-text">Follow us on our social networks:</p>
+        <ul class="order-social-list">
+          <li class="order-social-item">
+            <a href="" class="order-social-link">instagram</a><span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a href="" class="order-social-link">facebook</a><span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a href="" class="order-social-link">youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
