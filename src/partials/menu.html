@@ -1,17 +1,21 @@
 <div class="menu-wrapper">
-  <div class="menu-backdrop">
-    <div class="menu-container container">
-      <button class="header-close-menu-button">
-        <svg class="close-icon" width="16" height="16">
-          <use href="./img/icons.svg#close-icon"></use>
+  <div class="menu-backdrop menu-backdrop-hidden" data-action="close">
+    <div class="menu-container menu-container-hidden">
+      <button class="header-close-menu-button" data-action="close">
+        <svg class="close-icon" width="16" height="16" data-action="close">
+          <use href="./img/icons.svg#close-icon" data-action="close"></use>
         </svg>
       </button>
       <nav class="menu-nav">
-        <a href="#how" class="menu-nav-link">how it works</a>
-        <a href="#vegetables" class="menu-nav-link">vegetables</a>
-        <a href="#reviews" class="menu-nav-link">reviews</a>
+        <a href="#how" class="menu-nav-link" data-action="close"
+          >how it works</a
+        >
+        <a href="#vegetables" class="menu-nav-link" data-action="close"
+          >vegetables</a
+        >
+        <a href="#reviews" class="menu-nav-link" data-action="close">reviews</a>
       </nav>
-      <button class="menu-shop-button">shop now</button>
+      <button class="menu-shop-button" data-action="close">shop now</button>
     </div>
   </div>
 </div>
